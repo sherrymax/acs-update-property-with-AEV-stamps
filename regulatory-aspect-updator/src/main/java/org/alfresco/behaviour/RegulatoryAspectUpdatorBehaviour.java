@@ -50,8 +50,6 @@ public class RegulatoryAspectUpdatorBehaviour implements NodeServicePolicies.OnU
         globalPropertiesHandler.setBoeingAspectName(this.ASPECT_BOEING_ONEPPPM);
         globalPropertiesHandler.setRegulatoryAspectListPropertyName(this.PROP_REGULATORY_ASPECT_LIST);
 
-        System.out.println("*** **** **** this.ACS_HOSTNAME >>> >>> >>> " + this.ACS_HOSTNAME);
-
         System.out.println("*** **** **** NODE SERVICE >> " + this.nodeService);
 
         //On Property Update
