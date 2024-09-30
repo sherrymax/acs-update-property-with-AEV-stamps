@@ -31,22 +31,14 @@ public class RegulatoryAspectUpdatorBehaviour implements NodeServicePolicies.OnU
     private ContentService contentService;
     private MimetypeService mimetypeService;
     private final GlobalPropertiesHandler globalProperties = new GlobalPropertiesHandler();
+    
     //  FETCHING VALUES FROM alfresco-global.properties - START
-    @Value("${boeing.alfresco.hostname}")
-    private String ACS_HOSTNAME;
-
-    @Value("${boeing.alfresco.username}")
-    private String ACS_USERNAME;
-
-    @Value("${boeing.alfresco.password}")
-    private String ACS_PASSWORD;
     @Value("${boeing.namespace}")
     private String NAMESPACE_BOEING;
     @Value("${boeing.aspect.name}")
     private String ASPECT_BOEING_ONEPPPM;
     @Value("${boeing.regulatory-aspect-list.property}")
     private String PROP_REGULATORY_ASPECT_LIST;
-
     //  FETCHING VALUES FROM alfresco-global.properties - END
 
     public void init() {
